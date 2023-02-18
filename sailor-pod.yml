@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sailorpod
+spec:
+  containers:
+  - name: sailorcontainer
+    image: mgmbcssantosh86/sailor
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - name: tomcatport
+        containerPort: 8080
+        protocol: TCP
