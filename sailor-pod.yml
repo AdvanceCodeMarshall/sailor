@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: sailorcontainer
-    image: mgmbcssantosh86/sailor
+    image: mgmbcssantosh86/sailor:1.0
     resources:
       limits:
         memory: "128Mi"
